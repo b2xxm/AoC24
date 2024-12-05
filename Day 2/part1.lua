@@ -1,6 +1,6 @@
-s=io.read("*all")
+t=io.read("*all")
 n=0
-for v in s:gmatch("[^\n]+") do
+for v in t:gmatch("[^\n]+") do
     s,p,i,d=1,0,0,0
     for c in v:gmatch("%d+") do
         c=tonumber(c);if p==0 then goto e end

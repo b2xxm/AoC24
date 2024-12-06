@@ -6,7 +6,7 @@ for r,l in pairs(ll) do
         if a=="X" then
             for _,d in pairs(ld) do
                 nr,nc,mi=r,c,1 ::s:: nr,nc,mi=nr-d[1],nc-d[2],mi+1;if mi>#m then n=n+1 goto nd end
-                if ll[nr] then na=ll[nr][nc];if na==m:sub(mi,mi) then goto s end end ::nd::
+                if ll[nr] then if ll[nr][nc]==m:sub(mi,mi) then goto s end end ::nd::
             end
         end
     end

@@ -14,4 +14,4 @@ for r, ctr in pairs(t) do
         ::s1::
     end
 end
-print(n)--276
+print(n)
